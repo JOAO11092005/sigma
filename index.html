@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Membros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="login-section" class="section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="management-section" class="section" style="display:none;">
+            <h2>Gerenciar Membros</h2>
+            <form id="member-form">
+                <input type="text" id="member-name" placeholder="Nome do Membro" required>
+                <div class="platforms">
+                    <label>
+                        <input type="checkbox" class="platform-checkbox" value="YouTube Premium"> YouTube Premium
+                    </label>
+                    <label>
+                        <input type="checkbox" class="platform-checkbox" value="Prime Video"> Prime Video
+                    </label>
+                    <label>
+                        <input type="checkbox" class="platform-checkbox" value="Disney & Star+"> Disney & Star+
+                    </label>
+                    <label>
+                        <input type="checkbox" class="platform-checkbox" value="Max"> Max
+                    </label>
+                </div>
+                <input type="number" id="member-value" placeholder="Valor" required>
+                <button type="submit">Adicionar Membro</button>
+            </form>
+            <h3>Membros Atuais</h3>
+            <ul id="member-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
